@@ -7,6 +7,7 @@ body {
   .emojis {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 
   .emoji {
@@ -14,7 +15,8 @@ body {
     border-radius: 8px;
     padding: 1rem;
     display:flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    justify-content: space-between;
   }
   
   .emoji h2 {
@@ -32,21 +34,22 @@ body {
   
   .icon {
     font-size: 4rem;
+    margin:auto;
   }
 
   .emoji :nth-child(1) {
-    order: 3;
+    order: 1;
 }
   .emoji :nth-child(2) {
-      order: 4;
+      order: 0;
   }
 
   .emoji :nth-child(3) {
-    order: 2;
+    order: 3;
 }
 
 .emoji :nth-child(4) {
-    order: 1;
+    order: 4;
 }
 
   
